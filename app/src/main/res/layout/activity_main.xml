@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Medi - Doctor App"
+        android:textColor="@color/teal_700"
+        android:textSize="56dp" />
+
+    <TextView
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Scan QR to View and Update Medical Record"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18dp" />
+
+    <Button
+        android:onClick="scanClicked"
+        android:id="@+id/scan"
+        android:layout_marginHorizontal="36dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal_700"
+        android:background="@drawable/edittext_bg_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear">
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="View Medical Record of the Patient"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp" />
+
+        <Button
+            android:onClick="viewClicked"
+            android:id="@+id/view"
+            android:layout_marginHorizontal="36dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:background="@drawable/edittext_bg_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Records" />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="Add a Prescription to the Patient"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp" />
+
+        <Button
+            android:onClick="addClicked"
+            android:id="@+id/add"
+            android:layout_marginHorizontal="36dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:background="@drawable/edittext_bg_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Record" />
+
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="Click here to refresh the Medical Record"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp" />
+
+        <Button
+            android:onClick="refreshClicked"
+            android:id="@+id/refresh"
+            android:layout_marginHorizontal="36dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:background="@drawable/edittext_bg_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh" />
+    </LinearLayout>
+
+
+</LinearLayout>
